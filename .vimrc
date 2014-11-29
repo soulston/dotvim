@@ -7,6 +7,7 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Bundle: tpope/vim-pathogen
 call pathogen#infect()
+call pathogen#helptags()
 
 " Bundle: tpope/vim-sensible
 " Git
@@ -17,6 +18,14 @@ call pathogen#infect()
 
 " }}}
 
+
+" General
 syntax on
 filetype plugin indent on
+set encoding=utf-8
 
+
+" vim-pathogen
+
+" vim-airline
+let g:airline_powerline_fonts = 1
