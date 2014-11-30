@@ -16,3 +16,6 @@
 [submodule "bundle/vim-colors-distinguished"]
 	path = bundle/vim-colors-distinguished
 	url = https://github.com/Lokaltog/vim-distinguished
+[submodule "bundle/vim-listtrans"]
+	path = bundle/vim-listtrans
+	url = https://github.com/soulston/vim-listtrans

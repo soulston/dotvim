@@ -53,9 +53,9 @@
     set laststatus=2
 
 "====[ Time out on key codes but not mappings. Basically this makes terminal Vim work sanely ]=====
-"    set notimeout
-"    set ttimeout
-"    set ttimeoutlen=10
+    set notimeout
+    set ttimeout
+    set ttimeoutlen=10
 
 "====[ Key remappings ]=====
     let mapleader='\'
