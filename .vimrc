@@ -53,11 +53,13 @@
     set laststatus=2
 
 "====[ Time out on key codes but not mappings. Basically this makes terminal Vim work sanely ]=====
-    set notimeout
-    set ttimeout
-    set ttimeoutlen=10
+"    set notimeout
+"    set ttimeout
+"    set ttimeoutlen=10
 
 "====[ Key remappings ]=====
+    let mapleader='\'
+    let maplocalleader='\'
     nnoremap  ;  :
     nnoremap  :  ;
 
@@ -75,19 +77,19 @@
 "====[ vim-pathogen ]=====
 
 "====[ vim-airline ]=====
-    let g:airline_powerline_fonts = 1
+    let g:airline_powerline_fonts=1
 
 "====[ Make the 81st column stand out ]=====
     highlight ColorColumn ctermbg=magenta
     call matchadd('ColorColumn', '\%81v', 100)
 
 "====[ Shortcut to rapidly toggle `set list` ]=====
-    nmap <leader>l :set list!<CR>
+    nmap <leader>l ;set list!<CR>
 
 "====[ Use the same symbols as TextMate for tabstops and EOLs ]=====
     set listchars=tab:▸\ ,eol:¬
 
 "====[ Invisible character colors ]=====
-    highlight NonText guifg=#4a4a59
-    highlight SpecialKey guifg=#4a4a59
+    "highlight NonText guifg=#4a4a59
+    "highlight SpecialKey guifg=#4a4a59
 
