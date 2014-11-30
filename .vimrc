@@ -15,6 +15,7 @@
 
 "====[ General ]=====
 " Bundle: tpope/vim-sensible
+" Bundle: scrooloose/nerdcommenter
 
 "====[ Git ]=====
 " Bundle: tpope/vim-fugitive
@@ -63,8 +64,8 @@
 "====[ Key remappings ]=====
     let mapleader='\'
     let maplocalleader='\'
-    nnoremap  ;  :
-    nnoremap  :  ;
+    " nnoremap  ;  :
+    " nnoremap  :  ;
 
 "====[ Colours scheme ]=====
     colorscheme distinguished
@@ -83,15 +84,15 @@
     let g:airline_powerline_fonts=1
 
 "====[ soulston/vim-listtrans ]=====
-    nmap ;l  ;call ListTrans_toggle_format()<CR>
-    vmap ;l  ;call ListTrans_toggle_format('visual')<CR>
+    nmap :lt  :call ListTrans_toggle_format()<CR>
+    vmap :lt  :call ListTrans_toggle_format('visual')<CR>
 
 "====[ Make the 81st column stand out ]=====
     highlight ColorColumn ctermbg=magenta
     call matchadd('ColorColumn', '\%81v', 100)
 
 "====[ Shortcut to rapidly toggle `set list` ]=====
-    nmap <leader>l ;set list!<CR>
+    nmap <leader>l :set list!<CR>
 
 "====[ Use the same symbols as TextMate for tabstops and EOLs ]=====
     set listchars=tab:▸\ ,eol:¬
