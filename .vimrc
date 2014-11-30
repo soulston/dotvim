@@ -13,6 +13,7 @@
     call pathogen#infect()
     call pathogen#helptags()
 
+"====[ General ]=====
 " Bundle: tpope/vim-sensible
 
 "====[ Git ]=====
@@ -22,10 +23,12 @@
 " Bundle: twerth/ir_black
 " Bundle: bling/vim-airline
 
+"====[ Tools ]=====
+" Bundle: soulston/vim-listtrans
+
 " }}}
 
-
-"====[ General ]=====
+"====[ General fixes ]=====
     syntax on
     filetype plugin indent on
     set encoding=utf-8
@@ -78,6 +81,10 @@
 
 "====[ vim-airline ]=====
     let g:airline_powerline_fonts=1
+
+"====[ soulston/vim-listtrans ]=====
+    nmap ;l  ;call ListTrans_toggle_format()<CR>
+    vmap ;l  ;call ListTrans_toggle_format('visual')<CR>
 
 "====[ Make the 81st column stand out ]=====
     highlight ColorColumn ctermbg=magenta

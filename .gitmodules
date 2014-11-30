@@ -19,3 +19,6 @@
 [submodule "bundle/vim-listtrans"]
 	path = bundle/vim-listtrans
 	url = https://github.com/soulston/vim-listtrans
+[submodule "bundle/vim-nerdcommenter"]
+	path = bundle/vim-nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
