@@ -24,6 +24,11 @@ syntax on
 filetype plugin indent on
 set encoding=utf-8
 
+" Colours
+" syntax enable
+" set background=dark
+" colorscheme solarized
+colorscheme distinguished
 
 " vim-pathogen
 
