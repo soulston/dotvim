@@ -26,3 +26,7 @@ https://coderwall.com/p/yiot4q/setup-vim-powerline-and-iterm2-on-mac-os-x
 
 http://www.vimninjas.com/2012/08/26/10-vim-color-schemes-you-need-to-own/
 
+## Mac specific
+
+Create alias for macvim to open macvim in the terminal
+alias mvi='mvim -v'
